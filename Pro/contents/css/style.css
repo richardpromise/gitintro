@@ -1,0 +1,78 @@
+/* templates */
+.winnieEmotion {
+  font-size: 7em;
+  text-shadow: 0 0 0 10px #fff;
+}
+
+.winnieMessage {
+  font-size: 1.2em;
+  text-align: center;
+  font-family: cursive;
+
+  text-transform: capitalize;
+}
+
+.userInput form input {
+  height: 2em;
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  border: none;
+  text-align: center;
+  font-size: 0.8em;
+  min-width: calc(100% - 1em);
+}
+
+.userInput form input:hover {
+  outline: 4px solid var(--secondary-color);
+}
+
+.userInput form button[type="submit"] {
+  background-color: var(--sub-color);
+  color: var(--primary-color);
+
+  font-size: 0.8em;
+  padding: 0.5em 1.1em;
+  border: none;
+  font-weight: bold;
+}
+/* end of template */
+
+.headlines {
+  z-index: 1000;
+}
+
+.nav-head {
+  padding: 0.5em 0.9em;
+
+  background-color: var(--primary-color);
+  color: var(--sub-color);
+}
+
+.gameBox .container,
+.pop-box .container {
+  background-color: var(--primary-color);
+  color: var(--sub-color);
+
+  padding: var(--main-gap);
+  min-width: 300px;
+  max-width: 640px;
+}
+
+.pop-box {
+  z-index: 5000;
+}
+
+.pop-box .container {
+  border: 2px solid var(--danger);
+}
+
+@media (max-height: 500px) {
+  .gameBox {
+    margin-top: 200px;
+  }
+}
+
+.backdrop {
+  background-color: #000000b9;
+  z-index: 2000;
+}

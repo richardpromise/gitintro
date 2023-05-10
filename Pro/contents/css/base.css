@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3c17b6;
+  --secondary-color: #61719c;
+  --main-color: #060606;
+  --sub-color: #ebf5f6;
+  --danger: red;
+
+  --main-gap: calc(20px + 0.5vmax);
+  --sub-gap: calc(10px + 0.5vmax);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 270px;
+  font-size: calc(18px + 0.8vmax);
+}
+
+button {
+  cursor: pointer;
+}
+
+a:hover,
+button:hover {
+  opacity: 50%;
+}
+
+/* special  classes */
+
+.u-flex {
+  display: flex;
+}
+
+.o-grid {
+  display: grid;
+}
+
+.full-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ali-items-cent {
+  align-items: center;
+}
+
+.just-cont-cent {
+  justify-content: center;
+}
+
+.just-cont-sB {
+  justify-content: space-between;
+}
+
+.place-cont-cent {
+  place-content: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.place-item-cent {
+  place-items: center;
+}
+
+.big-gap {
+  gap: var(--main-gap);
+}
+
+.small-gap {
+  gap: var(--sub-gap);
+}
+
+.relative-p {
+  position: relative;
+}
+
+.absolute-p {
+  position: absolute;
+}
+
+.fixed-p {
+  position: fixed;
+}
+
+.cover-page-p {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.center-page-n {
+  height: 100vh;
+  width: 100%;
+}
+
+.center-page-f {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.over-auto {
+  overflow: auto;
+}
+
+.width100 {
+  width: 100%;
+}
+
+/* end of special classes */
+
+.test-bg {
+  background-color: red;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winne's Game</title>
+    <link rel="stylesheet" href="contents/css/base.css" />
+    <link rel="stylesheet" href="contents/css/style.css" />
+  </head>
+  <body>
+    <div class="App center-page-n over-auto" id="App">
+      <div class="headlines fixed-p width100">
+        <nav class="nav-head full-flex">
+          <h2 class="logo">Winne</h2>
+          <div class="side u-flex big-gap ali-items-cent">
+            <h5 class="username">Unknown</h5>
+            <h6 class="score-temp"><span id="score">0</span> Points</h6>
+            <button class="exit">Exit</button>
+          </div>
+        </nav>
+      </div>
+      <div class="main relative-p center-page-f">
+        <div class="gameBox absolute-p center-page-f">
+          <div class="container u-flex f-col ali-items-cent big-gap">
+            <div class="winnieEmotion">😀</div>
+            <div class="winnieMessage">guess winnie's number (1 to 10)</div>
+            <div class="userInput width100">
+              <form id="userForm" class="full-flex f-col small-gap">
+                <input
+                  type="number"
+                  name="userGuess"
+                  id="userGuess"
+                  min="0"
+                  max="10"
+                  class="width100"
+                />
+                <button type="submit">Check</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup"></div>
+      </div>
+    </div>
+    <script src="contents/js/app.js" type="module"></script>
+    <!-- <script src="./extra/note.js"></script> -->
+  </body>
+</html>
