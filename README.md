@@ -1,2 +1,2 @@
-# gitintro
-just starting github
+# winnie project 
+Game project 
